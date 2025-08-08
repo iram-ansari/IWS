@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWEB SOLUTIONS HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+        .hosting-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #a78bfa;
+        }
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover .tech-icon {
+            transform: scale(1.2);
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .hosting-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link:hover {
+            color: #a78bfa;
+        }
+
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover .tech-icon {
+            transform: scale(1.2);
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-buttons a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .floating-buttons .call-btn {
+            background-color: #007bff;
+        }
+
+        .floating-buttons .whatsapp-btn {
+            background-color: #25D366;
+        }
+
+        /* Vertical Contact */
+        .vertical-contact {
+            position: fixed;
+            top: 40%;
+            left: 0;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .vertical-contact:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Chat Icon */
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+
+        .testimonials {
+            background: #fdfdfd;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonial-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .card strong {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+    <style>
+        .whatsapp-cta {
+            padding: 40px 20px;
+            text-align: center;
+            background: #e5ffe5;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #6366f1;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .why-choose-us {
+            padding: 50px 20px;
+            background: #f0f0f0;
+            text-align: center;
+        }
+
+        .reasons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .reason-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason-box h3 {
+            color: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .faq-section {
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .faq-section details {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-section summary {
+            font-weight: bold;
+            padding: 10px;
+            background: #eee;
+            border-radius: 5px;
+        }
+
+        .faq-section p {
+            padding: 10px 15px;
+        }
+
+
+        .about-section {
+            background: #f0f4f8;
+            padding: 60px 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-container h2 {
+            font-size: 36px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .about-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .about-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-box h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        h2 {
+            align-items: center;
+            font-size: large;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-2xl font-bold text-indigo-600">IWEB</div>
+                <span class="ml-1 text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">SOLUTIONS HUB</span>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="p-2 rounded-md hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-indigo-500 transition">Home</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-indigo-500 transition">Services</a>
+                <a href="#technologies" class="nav-link text-gray-600 hover:text-indigo-500 transition">Technologies</a>
+                <a href="#portfolio" class="nav-link text-gray-600 hover:text-indigo-500 transition">Portfolio</a>
+                <a href="#hosting" class="nav-link text-gray-600 hover:text-indigo-500 transition">Hosting</a>
+                <a href="#team" class="nav-link text-gray-600 hover:text-indigo-500 transition">Team</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-indigo-500 transition">About</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Home</a>
+                <a href="#services" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Services</a>
+                <a href="#technologies" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Technologies</a>
+                <a href="#portfolio" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Portfolio</a>
+                <a href="#hosting" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Hosting</a>
+                <!-- <a href="#team" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Team</a> -->
+                <a href="#about" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">About</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-indigo-600 transition py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Crafting Digital Experiences That Drive Growth</h1>
+                <p class="text-lg mb-8 opacity-90">Full-service web development and cloud hosting solutions tailored to your business needs.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium shadow-lg hover:bg-indigo-50 transition">Get Started</a>
+                    <a href="#portfolio" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition">View Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://user-images.githubusercontent.com/74038190/212750672-2f3f2b50-c84f-4ed8-a60a-849ae69ff9df.gif" alt="Team of web developers collaborating on a project in a modern office space with multiple screens displaying website designs" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white" id="hosting">
+        <div class="container mx-auto px-6" id="hosting">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Comprehensive Services</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">We deliver end-to-end digital solutions to transform your online presence.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round, stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Web Development</h3>
+                    <p class="text-gray-600">Tailored websites built with modern technologies to meet your specific business requirements.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cloud Hosting Solutions</h3>
+                    <p class="text-gray-600">Reliable, scalable hosting with 99.9% uptime guarantee and 24/7 technical support.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24, xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Security & Maintenance</h3>
+                    <p class="text-gray-600">Proactive monitoring, regular updates and security patches to keep your site protected.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600">Beautiful, intuitive interfaces designed to engage users and drive conversions.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none, stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600">Strategic optimization to improve search rankings and drive organic traffic.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-xl hover:shadow-lg transition;">
+                    <div class="feature-icon w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">E-commerce Solutions</h3>
+                    <p class="text-gray-600">Complete online store setup with payment gateways, inventory management and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">About IWEB Solutions</h2>
+            <p>We are a passionate team dedicated to providing creative solutions that bring your ideas to life. Whether
+                you're a startup, a small business, or an individual, we help you build a strong online presence with
+                stunning designs and powerful features.</p>
+
+            <div class="about-boxes">
+                <div class="about-box">
+                    <h3>🎯 Our Mission</h3>
+                    <p>To empower businesses and individuals with modern, elegant, and affordable web solutions.</p>
+                </div>
+                <div class="about-box">
+                    <h3>💡 Our Vision</h3>
+                    <p>Creating a digital space where every brand, no matter how small, can shine online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Recent Projects</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">See how we've helped businesses like yours achieve digital success.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ec552fc2-f47f-4123-b640-64550ee8bd40.png" alt="Modern e-commerce website design with product grid, clean typography and warm color scheme" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">WEb Development</h3>
+                        <p class="text-gray-600 mb-4">Premium fashion e-commerce platform with custom CMS</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">E-commerce</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">WooCommerce</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/98a9922d-43b6-40f6-b1c0-1e82d0de2a44.png" alt="Corporate website dashboard interface with data visualization charts and analytics" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">FinTech Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Financial analytics platform with real-time data</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Web App</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">React</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc839de7-ae0a-43e1-9b82-000d72ce7f09.png" alt="Restaurant website with food photography, online reservation system and menu browsing" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Urban Eats</h3>
+                        <p class="text-gray-600 mb-4">Restaurant website with online ordering system</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Food Service</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Reservations</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#contact" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Technologies We Master</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Cutting-edge technologies powering your digital success</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <!-- Tech 1 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="font-medium">React</h3>
+                </div>
+                
+                <!-- Tech 2 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="font-medium">Node.js</h3>
+                </div>
+                
+                <!-- Tech 3 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3 class="font-medium">Vue.js</h3>
+                </div>
+                
+                <!-- Tech 4 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3 class="font-medium">Angular</h3>
+                </div>
+                
+                <!-- Tech 5 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3 class="font-medium">Laravel</h3>
+                </div>
+                
+                <!-- Tech 6 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="font-medium">WordPress</h3>
+                </div>
+                
+                <!-- Tech 7 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="font-medium">AWS</h3>
+                </div>
+                
+                <!-- Tech 8 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="font-medium">MongoDB</h3>
+                </div>
+                
+                <!-- Tech 9 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="font-medium">PostgreSQL</h3>
+                </div>
+                
+                <!-- Tech 10 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="font-medium">Docker</h3>
+                </div>
+                
+                <!-- Tech 11 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="font-medium">Python</h3>
+                </div>
+                
+                <!-- Tech 12 -->
+                <div class="tech-card p-6 rounded-xl bg-gray-50 text-center">
+                    <div class="tech-icon text-5xl text-indigo-600 mb-4">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3 class="font-medium">PHP</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+ 
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="max-w-2xl mx-auto text-lg mb-8 opacity-90">Get in touch with our team to discuss how we can help bring your digital vision to life.</p>
+            <a href="#contact" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-medium text-lg shadow-lg hover:bg-indigo-50 transition">Get Started Today</a>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Why Choose Us</h2>
+
+        <div class="reasons">
+            <div class="reason-box">
+                <h3>✔️ Fast Support</h3>
+                <p>We offer 24/7 support to resolve your queries quickly and effectively.</p>
+            </div>
+            <div class="reason-box">
+                <h3>✔️ Affordable Pricing</h3>
+                <p>Our plans are designed to suit all types of budgets.</p>
+            </div>
+            <div class="reason-box">
+                <h3>✔️ Trusted by Clients</h3>
+                <p>We are trusted by over 1000+ satisfied customers.</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800"> Frequently Asked Questions</h2>
+
+        <details>
+            <summary>How can I contact you?</summary>
+            <p>You can reach us through WhatsApp or our contact form.</p>
+        </details>
+        <details>
+            <summary>Is your service free?</summary>
+            <p>Yes, basic features are absolutely free.</p>
+        </details>
+        <details>
+            <summary>Can I customize the design?</summary>
+            <p>Yes, you can fully customize the layout as per your need.</p>
+        </details>
+    </section>
+
+    <section class="whatsapp-cta">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Need Help ?</h2>
+
+
+        <p>Click below to chat with us on WhatsApp instantly.</p>
+        <a href="https://wa.me/917395022117" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+    </section>
+
+
+    <section class="testimonials">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">What Our Clients Say</h2>
+
+
+        <div class="testimonial-cards">
+            <div class="card">
+                <p>"Excellent service and support!"</p>
+                <strong>- Priya S.</strong>
+            </div>
+            <div class="card">
+                <p>"Affordable and super quick!"</p>
+                <strong>- Raj K.</strong>
+            </div>
+            <div class="card">
+                <p>"Highly recommended for startups."</p>
+                <strong>- Sneha T.</strong>
+            </div>
+        </div>
+    </section>
+    <div class="form-container" id="contact">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Contact Us on WhatsApp</h2>
+
+        <input type="text" id="name" placeholder="Name *" required><br><br>
+        <input type="email" id="email" placeholder="Email *" required><br><br>
+        <input type="text" id="mobile" placeholder="Mobile Number *" required><br><br>
+
+        <select id="enquiry">
+            <option value="">-- Your Enquiry For --</option>
+            <option value="Website Development">Website Development</option>
+            <option value="App Development">App Development</option>
+            <option value="Software / ERP">Software / ERP</option>
+            <option value="Digital Marketing">Digital Marketing</option><br><br>
+        </select>
+
+        <textarea id="message" rows="4" placeholder="Please describe what you need."></textarea><br><br>
+
+        <button onclick="sendToWhatsApp()" class="whatsapp-btn">Get a free consultation</button>
+    </div>
+
+    <div class="floating-buttons">
+        <a href="tel:+918736051739" class="call-btn" title="Call Us"><i class="fa fa-phone"></i></a>
+        <a href="https://wa.me/917395022117?text=Hello%2C%20I%20am%20interested%20in%20your%20services.
+    " class="whatsapp-btn" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-2xl font-bold text-white">IWSH</div>
+                        <!-- <span class="ml-2 text-xs bg-indigo-600 text-white px-2 py-1 rounded-full">SOLUTIONS</span> -->
+                    </div>
+                    <p class="mb-4">Empowering businesses through innovative web solutions and reliable hosting services.</p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div> -->
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#hosting" class="hover:text-white transition">Hosting Plans</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cloud Hosting</a></li>
+                        <li><a href="#" class="hover:text-white transition">UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">E-commerce Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition">SEO Optimization</a></li>
+                        <li><a href="#" class="hover:text-white transition">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-indigo-500"></i>
+                            <span>IT NEAR Amrawati<br>Lucknow, Uttar Pradesh 201301</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-indigo-500"></i>
+                            <span>+91 7395022117</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-indigo-500"></i>
+                            <span>iwebsolutionshub@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2023 IWEB Solutions Hub. All rights reserved. Designed by IRAM ANSARI</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-sm hover:text-white mr-4">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-white mr-4">Terms of Service</a>
+                    <a href="#" class="text-sm hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            this.querySelector('svg').classList.toggle('text-indigo-600');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = targetPosition + window.pageYOffset - (headerHeight + 20);
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('nav .md\\:flex');
+                    if (!navLinks.classList.contains('hidden')) {
+                        navLinks.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
